@@ -30,4 +30,11 @@ def mini_batch_gradient_descent(g, w, x_train, y_train, alpha, max_its, batch_si
             w -= alpha * grad
             
             # Compute cost for current batch
-           
+            epoch_cost += np.sum((y_batch - x_batch @ w)**2) / n_samples
+        
+        # Append cost for epoch to history
+        cost_history.append(epoch_cost)
+        
+        print(f"Epoch {epoch+1}/{max_its}: cost={epoch_cost:.4f}")
+    
+    return w, cost_history
