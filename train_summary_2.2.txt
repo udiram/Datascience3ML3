@@ -1,0 +1,15 @@
+Batch size 200:
+-------------
+Epoch 1, cost = 1.1746
+Epoch 2, cost = 0.9873
+Epoch 3, cost = 0.9183
+Epoch 4, cost = 0.8773
+Epoch 5, cost = 0.8516
+
+Full batch:
+-----------
+Epoch 1, cost = 1.1656
+Epoch 2, cost = 0.9706
+Epoch 3, cost = 0.8978
+Epoch 4, cost = 0.8536
+Epoch 5, cost = 0.8256
