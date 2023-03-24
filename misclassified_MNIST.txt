@@ -1,0 +1,12 @@
+Misclassification Rates by Digit:
+----------------------------------
+Digit 0: 1.67%
+Digit 1: 0.65%
+Digit 2: 2.89%
+Digit 3: 1.65%
+Digit 4: 1.28%
+Digit 5: 1.90%
+Digit 6: 1.52%
+Digit 7: 1.55%
+Digit 8: 2.67%
+Digit 9: 3.25%
