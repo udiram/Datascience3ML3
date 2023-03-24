@@ -1,0 +1,16 @@
+x1list = np.linspace(np.min(X[:,0])-2, np.max(X[:,0])+2, 50)
+x2list = np.linspace(np.min(X[:,1])-2, np.max(X[:,1])+2, 50)
+
+predictions = model.predict(np.array(np.meshgrid(x1list, x2list)).T.reshape(-1, 2))
+Z = predictions[:, 1].reshape((50, 50))
+
+plt.figure(figsize=(8,6))
+plt.contourf(x1list, x2list, Z, cmap=plt.cm.RdBu_r, alpha=.3)
+plt.colorbar()
+plt.scatter(X[:,0], X[:,1], c=y, cmap=plt.cm.RdBu_r, edgecolors='k')
+plt.xlim(x1list.min(), x1list.max())
+plt.ylim(x2list.min(), x2list.max())
+plt.xlabel('$x_1$')
+plt.ylabel('$x_2$')
+plt.title('Prediction contour plot with actual data points')
+plt.show()
