@@ -23,3 +23,21 @@ history = model.fit(X_train, Y_train,
                     epochs=50,
                     verbose=1,
                     shuffle=True)
+
+# Plot the model and validation accuracy
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('Model Accuracy')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['train', 'val'], loc='upper left')
+plt.show()
+
+# Plot the model and validation loss
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Model Loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(['train', 'val'], loc='upper left')
+plt.show()
